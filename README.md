@@ -1,4 +1,4 @@
-# alfresco-restclient-jscript-extension
+# alfresco-restclient-jscript-extension, tested with Alfresco Community Edition 7.0.0
 This extension adds a simple REST-Client to the alfresco repo, which can be used within goldhammer's Javascript Admin Console component (see https://github.com/share-extras/js-console). Using the simple web service client it is possible to request data from different sources to fill a document's meta-attributes automatically within a executed rule-set.
 
 The REST-Client works like this:
