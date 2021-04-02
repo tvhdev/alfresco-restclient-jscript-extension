@@ -12,3 +12,5 @@ var ret = restclient.get("https://www.bank.de","kontonummer","passwort");
 print(ret);
 
 ```
+
+Enjoy, and please fix bugs as there could be some;)
