@@ -16,7 +16,6 @@ print(ret);
 mvn clean install -DskipTests
 
 # install target/alfresco-restclient-jscript-extension-1.0-SNAPSHOT.amp on alfresco repo server
-java -jar alfresco-mmt*.jar ...
-
+java -jar ${TOMCAT_DIR}/alfresco-mmt/alfresco-mmt*.jar install alfresco-restclient-jscript-extension-1.0-SNAPSHOT.amp /usr/local/tomcat/webapps/alfresco -force -nobackup -verbose
 
 Enjoy, and please fix bugs as there could be some;)
