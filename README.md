@@ -12,5 +12,11 @@ var ret = restclient.get("https://www.bank.de","kontonummer","passwort");
 print(ret);
 
 ```
+# compile to create AMP file
+mvn clean install -DskipTests
+
+# install target/alfresco-restclient-jscript-extension-1.0-SNAPSHOT.amp on alfresco repo server
+java -jar alfresco-mmt*.jar ...
+
 
 Enjoy, and please fix bugs as there could be some;)
