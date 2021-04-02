@@ -7,5 +7,7 @@ alfresco.log.*
 share.log.*
 solr.log.*
 @@ALFRESCO_SOLR4_DATA_DIR@@/
-
+.classpath
+.project
+/.settings
 **.iml
