@@ -12,10 +12,12 @@ var ret = restclient.get("https://www.bank.de","kontonummer","passwort");
 print(ret);
 
 ```
-# compile to create AMP file
+# Compilation
 mvn clean install -DskipTests
 
-# install target/alfresco-restclient-jscript-extension-1.0-SNAPSHOT.amp on alfresco repo server
-java -jar ${TOMCAT_DIR}/alfresco-mmt/alfresco-mmt*.jar install alfresco-restclient-jscript-extension-1.0-SNAPSHOT.amp /usr/local/tomcat/webapps/alfresco -force -nobackup -verbose
+# Installation
+The jscript-extension has been developed for an existing Alfresco 7.0 installation. The alfresco-restclient-jscript-extension-<version>.amp needs to be installed into the Alfresco Repository webapp using the Alfresco Module Management Tool (MMT):
 
+java -jar alfresco-mmt.jar install alfresco-restclient-jscript-extension-<version>.amp /path/to/alfresco.war
+  
 Enjoy, and please fix bugs as there could be some;)
